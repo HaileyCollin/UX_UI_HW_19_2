@@ -1,0 +1,281 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    color: white;
+  }
+
+  .inline-block.themeChange.light-mode a {
+    color: white;
+}
+
+.inline-block.themeChange.dark-mode a {
+  color: white;
+}
+
+  .logo {
+    width: 23%;
+    padding: 1%;
+  }
+
+  .logo img {
+    width:100px;
+    height:100px;
+  }
+
+  nav {
+    width: 73%;
+    padding: 1%;
+    font-family: "Advent Pro";
+    font-size: 28px;
+  }
+
+  ul {
+    width: 50%;
+    margin-left: auto;
+  }
+
+  .heroImg {
+    height: 600px;
+    padding: 100px;
+    background-image: url("../Images/Desktop\ Hero.png");
+    }
+
+    .content img {
+    height: 50%;
+    width: 50%;
+    margin-left: auto;
+    display: block;
+    float: right;
+  }
+
+  .content {
+    width: 500px;
+    margin: 0 auto; 
+    background-color: rgba(0,0,0,0.7);
+    padding: 20px;
+  }
+
+  footer {
+    background-color: rgb(68,32,48);
+    padding: 20px 0; 
+    text-align: center; 
+  }
+
+  footer ul {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+  }
+
+  footer ul li {
+    padding: 10px;
+    list-style-type: none;
+    color: #fff;
+    font-family: "Anonymous Pro";
+  }
+
+  .footer-content Img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .linkedin img {
+    height: 40px;
+    width: 40px;
+  }
+
+
+  button {
+    font-size: 30px;
+    font-family: "Advent Pro";
+    border-radius: 16px;
+    Padding: 20px;
+    background-color: rgb(68,32,48); 
+    color: white;
+    border-color: rgba(0,0,0,0);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  h1 {
+    font-size: 60px;
+    font-family: "Advent Pro";
+    color: white;
+    text-align: left;
+    
+  }
+
+  h2 {
+    font-size: 38px;
+    font-family: "Advent Pro";
+    color: white;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-family: "Anonymous Pro";
+    color: white;
+  }
+
+  h4 {
+    font-size: 32px;
+    font-family: "Anonymous Pro";
+    color: white;
+  }
+
+  h5 {
+    font-size: 48px;
+    font-family: "Advent Pro";
+    color: white;
+    text-align: center;
+  }
+
+  h6 {
+    font-size: 48px;
+    font-family: "Advent Pro";
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 28px;
+    font-family: "Anonymous Pro";
+    color: white;
+  }
+
+body {
+    background-color: #111;
+}
+
+.felxContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: left;
+}
+
+.flex-item {
+  width: 100%; 
+  margin: 0, auto;
+  background-color: none;
+  text-align: center; 
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-item img {
+  height: 100px;
+  width: 100px;
+}
+
+
+.about img{
+    height: 300px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.workGrid img {
+    height: 400px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.workGrid {
+  display: grid;
+  min-height: 500px;
+  grid-template-rows: 50%, 50%;
+  grid-template-columns: 2fr 2fr;
+  gap: 100px;
+  grid-template-areas: 
+  "grid-item1"
+  "grid-item2"
+  "grid-item3"
+  "grid-item4"
+  ;
+  text-align: center;
+}
+
+.grid-item1 {
+  color: white;
+  font-size: 40px;
+  font-family: "Advent Pro";
+  text-align: center;
+  padding: 20px;
+
+}
+
+.grid-item2 {
+  color: white;
+  font-size: 40px;
+  font-family: "Advent Pro";
+  text-align: center;
+  padding: 20px;
+}
+
+.grid-item3 {
+  color: white;
+  font-size: 40px;
+  font-family: "Advent Pro";
+  text-align: center;
+  padding: 20px;
+}
+
+.grid-item4 {
+  color: white;
+  font-size: 40px;
+  font-family: "Advent Pro";
+  text-align: center;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .workGrid {
+    flex-direction: column;
+    grid-template-areas:
+    "grid-item1"
+    "grid-item2"
+    "grid-item3"
+    "grid-item4"
+    ;
+    grid-template-rows: 300px, 300px, 300px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  background-color: white;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.preloader img {
+  animation: spin 3s ease;
+  transition: all;
+  width: 150px;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+  
