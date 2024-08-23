@@ -99,6 +99,10 @@
     display: block;
   }
 
+  button a {
+    color: white;
+  }
+  
   h1 {
     font-size: 60px;
     font-family: "Advent Pro";
